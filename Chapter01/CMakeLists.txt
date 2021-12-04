@@ -1,0 +1,9 @@
+
+add_executable(01_auto-deduction_for_class_templates 01_auto-deduction_for_class_templates.cpp)
+add_executable(01_braced_initializer_list 01_braced_initializer_list.cpp)
+add_executable(01_features 01_features.cpp)
+add_executable(01_inline_variables 01_inline_variables.cpp)
+add_executable(01_local_scoped_variables 01_local_scoped_variables.cpp)
+add_executable(01_static_assert 01_static_assert.cpp)
+add_executable(01_stdinvoke_method 01_stdinvoke_method.cpp)
+add_executable(01_structured_binding 01_structured_binding.cpp)
