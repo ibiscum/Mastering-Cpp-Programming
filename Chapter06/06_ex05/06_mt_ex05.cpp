@@ -3,7 +3,7 @@
  *
  *       Filename:  main.cpp
  *
- *    Description:  This exercise will demonstrate using mutex as a locking mechnaism.
+ *    Description:  This exercise will demonstrate using mutex as a locking mechanism.
  *
  *        Version:  1.0
  *        Created:  04/09/2017 10:24:44 PM
@@ -31,21 +31,20 @@ mutex locker;
 
 Account account(5000.00);
 
-void threadProc ( ThreadType typeOfThread ) {
+[[noreturn]] void threadProc ( ThreadType typeOfThread )
+{
 
-	while ( 1 ) {
+	while ( true ) {
 	switch ( typeOfThread ) {
 		case DEPOSITOR: {
 
 			locker.lock();
 
-			cout << "Account balance before the deposit is "
-			     << account.getBalance() << endl;
+			cout << "Account balance before the deposit is " << account.getBalance() << endl;
 
 			account.deposit( 2000.00 );
 
-			cout << "Account balance after deposit is "
-			     << account.getBalance() << endl;
+			cout << "Account balance after deposit is " << account.getBalance() << endl;
 
 			locker.unlock();
 			this_thread::sleep_for( 1s );

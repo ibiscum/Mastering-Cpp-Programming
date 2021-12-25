@@ -1,22 +1,22 @@
-#include <iostream>
-#include <map>
-#include <iterator>
 #include <algorithm>
+#include <iostream>
+#include <iterator>
+#include <map>
 using namespace std;
 
-int main ( ) {
+int main() {
 
-	map<string, long> contacts;
+  map<string, long> contacts;
 
-	contacts["Jegan"] = 123456789;
-	contacts["Meena"] = 523456289;
-	contacts["Nitesh"] = 623856729;
-	contacts["Sriram"] = 993456789;
+  contacts["Jegan"] = 123456789;
+  contacts["Meena"] = 523456289;
+  contacts["Nitesh"] = 623856729;
+  contacts["Sriram"] = 993456789;
 
-	auto pos = contacts.find( "Sriram" );
+  auto pos = contacts.find("Sriram");
 
-	if ( pos != contacts.end() )
-		cout << pos->second << endl;
+  if (pos != contacts.end())
+    cout << pos->second << endl;
 
-	return 0;
+  return 0;
 }

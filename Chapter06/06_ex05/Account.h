@@ -5,8 +5,8 @@ class Account {
 private:
 	double balance;
 public:
-	Account( double balance );
-	double getBalance();
+	explicit Account( double balance );
+	double getBalance() const;
 	void deposit(double amount);
 	void withdraw(double amount);
 };

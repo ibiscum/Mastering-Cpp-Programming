@@ -3,7 +3,7 @@
  *
  *       Filename:  main.cpp
  *
- *    Description:  This exercise will demonstrate using mutex as a locking mechnaism.
+ *    Description:  This exercise will demonstrate using mutex as a locking mechanism.
  *
  *        Version:  1.0
  *        Created:  04/09/2017 10:24:44 PM
@@ -27,9 +27,9 @@ enum ThreadType {
 
 Account account(5000.00);
 
-void threadProc ( ThreadType typeOfThread ) {
+[[noreturn]] [[noreturn]] void threadProc ( ThreadType typeOfThread ) {
 
-	while ( 1 ) {
+	while ( true ) {
 	switch ( typeOfThread ) {
 		case DEPOSITOR: {
 			cout << "Account balance before the deposit is "

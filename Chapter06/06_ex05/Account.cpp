@@ -22,7 +22,7 @@ Account::Account(double balance) {
 	this->balance = balance;
 }
 
-double Account::getBalance() {
+double Account::getBalance() const {
 	return balance;
 }
 

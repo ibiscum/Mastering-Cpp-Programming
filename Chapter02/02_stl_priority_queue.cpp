@@ -1,7 +1,7 @@
-#include <iostream>
-#include <queue>
-#include <iterator>
 #include <algorithm>
+#include <iostream>
+#include <iterator>
+#include <queue>
 using namespace std;
 
 int main() {
@@ -16,8 +16,8 @@ int main() {
 
   cout << "Priority queue values are ..." << endl;
   while (!q.empty()) {
-	cout << q.top() << "\t";
-	q.pop();
+    cout << q.top() << "\t";
+    q.pop();
   }
   cout << endl;
   return 0;
